@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <title>My test page</title>
+	<!-- <script src="script.js" defer></script> -->
+	<script src="script_2.js" defer></script>
+	<script src="script_1.js" defer></script>
+	<style>
+		h2 {
+			margin: 10px auto;
+		}
+		
+		.outer_div {
+			width: 500px;
+			margin: 10px;
+			padding: 10px;
+			border: 3px solid #423179;
+			border-radius: 15px;
+		}
+		.inner_div {
+			margin: 20px;
+
+		}
+		
+		#pie_chart {
+			margin:10px;
+		}
+		
+		input {
+			border-radius: 15px;
+		}	
+		
+		button {
+			border-radius: 5px;
+		}
+		
+		ul {
+			list-style: none;
+			padding-left: 0px;
+			
+		}
+		
+		li {
+			border-radius: 5px;
+			background: #ced1d3;	
+			margin: 10px;
+			padding-left: 10px
+		}
+	</style>
+  </head>
+  <body>
+    <div class='outer_div' id="new_expense_div">
+		<h2>Insert new expense</h2>
+		<div class="inner_div">
+			<span>Description: </span>
+			<input type="text" name="item" id="exp_descr">
+		</div>
+		<div class="inner_div">
+			<span>Amount: </span>
+			<input type="text" name="item" id="exp_amount">
+		</div>
+		<div class="inner_div">
+			<span>Category: </span>
+			<select id='exp_category'>
+				<option>Category Placeholder</option>
+			</select>
+		</div>
+		<div class="inner_div">
+			<span>Currency: </span>
+			<select id='exp_currency'>
+				<option selected>CHF</option>
+				<option>EUR</option>
+			</select>
+			<span>
+				<button id='exp_submit'>Insert</button>
+			</span>
+		</div>
+	</div>
+	<div class='outer_div' id="info">
+		<button id='pie_chart_on'>Toggle pie chart</button>
+		<button id='all_exp'>Toggle all expenses</button>
+	</div>
+  </body>
+</html>
